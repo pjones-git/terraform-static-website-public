@@ -1,5 +1,6 @@
 # terraform-static-website-public
 Terraform project for hosting a static website on AWS with: S3, CloudFront, ACM, Route 53, WAF, Github Actions
+
 Production site: https://www.lextechnical.com
 
 - **S3** — primary bucket (us-east-1) + DR bucket (us-west-2) with cross-region replication
