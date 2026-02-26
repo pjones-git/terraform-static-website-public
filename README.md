@@ -8,7 +8,8 @@ Production site: https://www.lextechnical.com
 - **ACM** — DNS-validated certificate in us-east-1
 - **Route53** — alias A/AAAA records pointing to CloudFront (data source for existing hosted zone)
 - **WAF** — WebACL with AWSManagedRulesCommonRuleSet, CloudWatch logging
-- **GitHub Actions** — Checkov, Infracost, and `terraform plan` on PRs; apply with manual approval gate for prod
+- **Terraform, GitHub Actions** — Checkov, Infracost, and `terraform plan` on PRs; apply with manual approval gate for prod
+
 
 ## Project Structure
 
