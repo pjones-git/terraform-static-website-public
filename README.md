@@ -1,5 +1,6 @@
 # terraform-static-website-public
 Terraform project for hosting a static website on AWS with: S3, CloudFront, ACM, Route 53, WAF, Github Actions
+Production site: https://www.lextechnical.com/
 
 - **S3** — primary bucket (us-east-1) + DR bucket (us-west-2) with cross-region replication
 - **CloudFront** — global CDN with origin group failover (primary → DR on 4xx/5xx), OAC, TLS 1.2
@@ -7,8 +8,6 @@ Terraform project for hosting a static website on AWS with: S3, CloudFront, ACM,
 - **Route53** — alias A/AAAA records pointing to CloudFront (data source for existing hosted zone)
 - **WAF** — WebACL with AWSManagedRulesCommonRuleSet, CloudWatch logging
 - **GitHub Actions** — Checkov, Infracost, and `terraform plan` on PRs; apply with manual approval gate for prod
-
-Production site: https://www.lextechnical.com/
 
 ## Project Structure
 
