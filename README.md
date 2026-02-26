@@ -8,6 +8,8 @@ Terraform project for hosting a static website on AWS with: S3, CloudFront, ACM,
 - **WAF** — WebACL with AWSManagedRulesCommonRuleSet, CloudWatch logging
 - **GitHub Actions** — Checkov, Infracost, and `terraform plan` on PRs; apply with manual approval gate for prod
 
+Production site: https://www.lextechnical.com/
+
 ## Project Structure
 
 ```
